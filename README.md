@@ -9,6 +9,7 @@ ValidateAnnotation.xla - uses a schema file to check for each column header (e.g
 * A worksheet "meta" must contain annotation names in first column (require:meta(title,author,...))
 * Span of "sentence" must include all rows of overlapping "word" cell (sentence>word)
 * You may also use either/or in headers like this: sent|sent_n>translation
+* You can enfore cells in a column always being filled, e.g. to ensure the data is 'plated' with line annotations, via full:anno1,anno2,...
 
 MiscAnno.xla - miscellaneous macros to facilitate annotation tasks
 * Auto merge down - merge cells in selection with any empty cells under them
@@ -19,9 +20,9 @@ MiscAnno.xla - miscellaneous macros to facilitate annotation tasks
 * Insert line - programmatically insert a new line at the cursor position
 * Fill zeros where cells in selection are empty (useful for sparse matrices in cross tabulation)
 
-exmaralda_io_0.9.8.1.xla - Legacy version of corpus linguistics format converter for Windows Excel
-* Should hopefully be replaced soon by updated multiformat converter version
-* See documentation in README_exmaralda_io_0.9.8.1.pdf
+exmaralda_io_0.9.9.3.xla - Corpus linguistics format converter for Windows Excel
+* Somewhat misnamed, as it supports not only EXMARaLDA XML but also PTB brackets, conll10 dependencies, PAULA XML, TreeTagger SGML and more
+* See documentation in README_exmaralda_io_0.9.9.3.pdf
 
 UnderOverUse_V1.2.xla - Legacy version of a conditional formatting script for number comparisons
 * Highlights values of cells in warm/cold colors by deviation from control column values
